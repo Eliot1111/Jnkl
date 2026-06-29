@@ -23,13 +23,35 @@ const navigation = [
 ];
 
 const menuSections = {
-  "Бургеры": [
+  "Еда": [
     { name: "Смэшбургер S / M / L", price: "850 / 950 / 1 150 ₽" },
     { name: "Чикенбургер", price: "950 ₽" },
     { name: "Спайси смэшбургер", price: "1 200 ₽" },
     { name: "Фишбургер", price: "1 200 ₽" },
     { name: "Чикен санрайз", price: "1 000 ₽" },
     { name: "Фалафель смэш", price: "950 ₽" },
+    { name: "Микс салата", price: "500 ₽" },
+    { name: "Корн рибс", price: "700 ₽" },
+    { name: "Сырные палочки", price: "700 ₽" },
+    { name: "Криспи креветки", price: "800 ₽" },
+    { name: "Рифлёный фри", price: "600 ₽" },
+    { name: "Батат фри", price: "650 ₽" },
+    { name: "Чизи фрайс", price: "750 ₽" },
+    { name: "Куриные байтсы", price: "750 ₽" },
+    { name: "Классика", price: "850 ₽" },
+    { name: "Чиз-дог", price: "850 ₽" },
+    { name: "Хумус-боул", price: "900 ₽" },
+    { name: "Зелёный", price: "900 ₽" },
+    { name: "Цезарь", price: "950 ₽" },
+    { name: "С креветками и апельсином", price: "1 200 ₽" },
+    { name: "Мак & чиз", price: "650 ₽" },
+    { name: "Чикен карри", price: "850 ₽" },
+    { name: "Лазанья", price: "850 ₽" },
+    { name: "Стейк с фри", price: "1 200 ₽" },
+    { name: "Куриный бульон", price: "400 ₽" },
+    { name: "Куриный бульон с грудкой", price: "550 ₽" },
+    { name: "Томатный гаспачо", price: "550 ₽" },
+    { name: "Клубничный гаспачо", price: "650 ₽" },
   ],
   "Завтраки": [
     { name: "Авокадо тост", price: "850 ₽" },
@@ -43,87 +65,45 @@ const menuSections = {
     { name: "Черничные панкейки", price: "800 ₽" },
     { name: "Панкейки с беконом", price: "800 ₽" },
   ],
-  "Закуски": [
-    { name: "Микс салата", price: "500 ₽" },
-    { name: "Корн рибс", price: "700 ₽" },
-    { name: "Сырные палочки", price: "700 ₽" },
-    { name: "Криспи креветки", price: "800 ₽" },
-    { name: "Рифлёный фри", price: "600 ₽" },
-    { name: "Батат фри", price: "650 ₽" },
-    { name: "Чизи фрайс", price: "750 ₽" },
-    { name: "Куриные байтсы", price: "750 ₽" },
-  ],
-  "Хот-доги": [
-    { name: "Классика", price: "850 ₽" },
-    { name: "Чиз-дог", price: "850 ₽" },
-  ],
-  "Салаты": [
-    { name: "Хумус-боул", price: "900 ₽" },
-    { name: "Зелёный", price: "900 ₽" },
-    { name: "Цезарь", price: "950 ₽" },
-    { name: "С креветками и апельсином", price: "1 200 ₽" },
-  ],
-  "Основное": [
-    { name: "Мак & чиз", price: "650 ₽" },
-    { name: "Чикен карри", price: "850 ₽" },
-    { name: "Лазанья", price: "850 ₽" },
-    { name: "Стейк с фри", price: "1 200 ₽" },
-  ],
-  "Супы": [
-    { name: "Куриный бульон", price: "400 ₽" },
-    { name: "Куриный бульон с грудкой", price: "550 ₽" },
-    { name: "Томатный гаспачо", price: "550 ₽" },
-    { name: "Клубничный гаспачо", price: "650 ₽" },
-  ],
-  "Кофе": [
+  "Кофе и чай": [
     { name: "Фильтр 300 мл", price: "400 ₽" },
     { name: "Эспрессо 40 мл", price: "290 ₽" },
     { name: "Американо 200 мл", price: "290 ₽" },
     { name: "Капучино 200 / 300 мл", price: "400 / 450 ₽" },
     { name: "Латте 300 мл", price: "450 ₽" },
     { name: "Флэт уайт 200 мл", price: "450 ₽" },
-  ],
-  "Чай": [
     { name: "Матча-латте 500 мл", price: "550 ₽" },
     { name: "Чёрный 500 мл", price: "550 ₽" },
     { name: "Зелёный 500 мл", price: "550 ₽" },
     { name: "Травяной 500 мл", price: "550 ₽" },
   ],
-  "Софт": [
+  "Безалкогольные": [
     { name: "Вода Saint Spring Reserve 330 / 750 мл", price: "350 / 650 ₽" },
     { name: "Вода Borjomi 330 / 750 мл", price: "400 / 700 ₽" },
     { name: "Coca-Cola 330 мл", price: "500 ₽" },
     { name: "Тоник The Gardenist 200 мл", price: "450 ₽" },
-  ],
-  "Пиво и сидр": [
-    { name: "Stiegl Weisse 200 / 400 мл", price: "400 / 800 ₽" },
-    { name: "Schlitz Pils 200 / 400 мл", price: "250 / 500 ₽" },
-    { name: "Corona Extra 330 мл", price: "650 ₽" },
-    { name: "Estrella Free Damm 330 мл", price: "650 ₽" },
-    { name: "Петнат 125 / 750 мл", price: "700 / 4 200 ₽" },
-  ],
-  "Милкшейки": [
     { name: "Ванильный 300 мл", price: "600 ₽" },
     { name: "Шоколадный 300 мл", price: "600 ₽" },
     { name: "Манго-шейк 300 мл", price: "700 ₽" },
     { name: "Протеиновый 300 мл", price: "700 ₽" },
-  ],
-  "Лимонады": [
     { name: "Гамми кола 300 мл", price: "420 ₽" },
     { name: "Ромашка-фейхоа 300 мл", price: "420 ₽" },
     { name: "Маракуйя-грейпфрут 300 мл", price: "420 ₽" },
-  ],
-  "Холодные напитки": [
     { name: "Личи-чай 300 мл", price: "550 ₽" },
     { name: "Какао-лайм 300 мл", price: "650 ₽" },
     { name: "Пинк матча 300 мл", price: "650 ₽" },
     { name: "Эспрессо / матча-тоник", price: "650 ₽" },
     { name: "Эспрессо / матча-бамбл", price: "750 ₽" },
-  ],
-  "Свежевыжатые соки": [
     { name: "Апельсин 350 мл", price: "600 ₽" },
     { name: "Грейпфрут 350 мл", price: "600 ₽" },
     { name: "Яблоко 350 мл", price: "600 ₽" },
+  ],
+  "Бар": [
+    { name: "Stiegl Weisse 200 / 400 мл", price: "400 / 800 ₽" },
+    { name: "Schlitz Pils 200 / 400 мл", price: "250 / 500 ₽" },
+    { name: "Corona Extra 330 мл", price: "650 ₽" },
+    { name: "Estrella Free Damm 330 мл", price: "650 ₽" },
+    { name: "Петнат 125 / 750 мл", price: "700 / 4 200 ₽" },
   ],
 };
 
@@ -140,31 +120,31 @@ const benefits = [
   },
   {
     index: "03",
-    title: "Спокойная роскошь",
-    text: "Внимательный сервис и атмосфера, которая не требует специального повода.",
+    title: "Тёплая простота",
+    text: "Внимательный сервис и атмосфера без пафоса — легко зайти на завтрак, ужин или встречу.",
   },
 ];
 
-const galleryItems = [
+const atmospherePhotos = [
   {
     src: asset("photos/inside_the_restaurant.webp"),
     label: "Интерьер",
-    className: "gallery-card gallery-card--interior",
+    className: "atmosphere-card atmosphere-card--interior",
   },
   {
     src: asset("photos/food5.webp"),
     label: "Подача",
-    className: "gallery-card gallery-card--dessert",
+    className: "atmosphere-card atmosphere-card--dessert",
   },
   {
     src: asset("photos/food10.webp"),
     label: "Детали",
-    className: "gallery-card gallery-card--details",
+    className: "atmosphere-card atmosphere-card--details",
   },
   {
     src: asset("photos/food2.webp"),
-    label: "Вечерняя атмосфера",
-    className: "gallery-card gallery-card--evening",
+    label: "Зал",
+    className: "atmosphere-card atmosphere-card--evening",
   },
 ];
 
@@ -266,11 +246,11 @@ function Hero() {
       <div className="hero__grid">
         <div className="hero__copy">
           <h1>
-            Современный ресторан
-            <em> в сердце Москвы</em>
+            Ресторан
+            <em> на Усачёвой</em>
           </h1>
           <p className="hero__description">
-            Авторская кухня, светлая атмосфера и эстетика спокойной роскоши на Усачёвой улице.
+            Понятная еда, светлый зал и спокойный ритм для завтраков, встреч и длинных ужинов.
           </p>
           <div className="hero__actions">
             <a className="button button--primary" href="#menu">
@@ -350,7 +330,7 @@ function About() {
 }
 
 function MenuSection() {
-  const [activeSection, setActiveSection] = useState("Бургеры");
+  const [activeSection, setActiveSection] = useState("Еда");
 
   return (
     <section className="menu-section section" id="menu">
@@ -360,10 +340,10 @@ function MenuSection() {
       </div>
       <div className="menu-section__heading reveal">
         <h2>
-          Вкус, к которому
-          <em> хочется вернуться</em>
+          Базовое меню
+          <em> без лишнего шума</em>
         </h2>
-        <p>Собираем меню из понятных продуктов, ярких сочетаний и деталей, которые остаются в памяти.</p>
+        <p>Основные разделы собраны компактно: выбирайте категорию и смотрите актуальные позиции с ценами.</p>
       </div>
       <div className="menu-layout reveal">
         <div className="menu-tabs" role="tablist" aria-label="Разделы меню">
@@ -418,58 +398,25 @@ function Atmosphere() {
         <span>Атмосфера</span>
       </div>
       <div className="atmosphere__title reveal">
-        <h2>У каждого вечера — свой ритм.</h2>
+        <h2>Атмосфера, в которую легко встроить день.</h2>
         <p>
-          Для встреч, свиданий, быстрых завтраков и ужинов, которые незаметно становятся долгими.
+          Светлый зал, детали интерьера и несколько кадров изнутри Jnkl — без лишних подписей поверх фото.
         </p>
       </div>
-      <div className="atmosphere__stage reveal">
-        <img src={asset("photos/food1.webp")} alt="Гости за столиками в ресторане Jnkl" loading="lazy" />
-        <p className="atmosphere__quote">
-          «Светлое пространство, мягкая музыка и детали в каждой подаче»
-        </p>
-        <div className="atmosphere__number" aria-hidden="true">
-          03
-        </div>
-      </div>
-      <div className="atmosphere__points">
-        {["Светлое пространство", "Мягкая музыка", "Детали в каждой подаче", "Идеально для встреч"].map(
-          (point, index) => (
-            <div className="atmosphere-point reveal" key={point}>
-              <span>0{index + 1}</span>
-              <p>{point}</p>
-            </div>
-          ),
-        )}
-      </div>
-    </section>
-  );
-}
-
-function Gallery() {
-  return (
-    <section className="gallery section" aria-labelledby="gallery-title">
-      <div className="gallery__heading reveal">
-        <p>Небольшие моменты</p>
-        <h2 id="gallery-title">
-          Внутри
-          <em> Jnkl</em>
-        </h2>
-      </div>
-      <div className="gallery-grid">
-        {galleryItems.map((item, index) => (
+      <div className="atmosphere-grid">
+        {atmospherePhotos.map((item, index) => (
           <figure className={`${item.className} reveal`} key={item.label}>
-            <div className="gallery-card__image">
-              <img src={item.src} alt={`${item.label} в ресторане Jnkl`} loading="lazy" />
+            <div className="atmosphere-card__image">
+              <img src={item.src} alt={`${item.label} Jnkl`} loading="lazy" />
             </div>
             <figcaption>
-              <span>0{index + 1}</span>
+              <span>{String(index + 1).padStart(2, "0")}</span>
               <span>{item.label}</span>
             </figcaption>
           </figure>
         ))}
       </div>
-      <div className="gallery-strip reveal" aria-label="Дополнительные фотографии блюд">
+      <div className="atmosphere-strip reveal" aria-label="Дополнительные фотографии Jnkl">
         {["food4.webp", "food6.webp", "food7.webp", "food8.webp", "burger.webp"].map((photo) => (
           <img src={asset(`photos/${photo}`)} alt="" loading="lazy" key={photo} />
         ))}
@@ -579,11 +526,8 @@ function Location() {
       </div>
       <div className="location__layout">
         <div className="location__copy reveal">
-          <h2>
-            В самом сердце
-            <em> Хамовников</em>
-          </h2>
-          <address>Усачёва ул., 15А, Москва</address>
+          <h2>Контакты</h2>
+          <address>Усачёва ул., 15А</address>
           <div className="location__details">
             <p>
               <Clock3 size={17} />
@@ -610,13 +554,10 @@ function Location() {
             Открыть на карте
           </a>
         </div>
-        <figure className="location__image reveal">
-          <img src={asset("photos/inside_the_restaurant.webp")} alt="Интерьер Jnkl на Усачёвой улице" loading="lazy" />
-          <figcaption>
-            <span>55.7276° N</span>
-            <span>37.5628° E</span>
-          </figcaption>
-        </figure>
+        <div className="location__note reveal">
+          <MapPin size={20} strokeWidth={1.5} />
+          <p>Москва, район Хамовники. Адрес и маршрут доступны по кнопке «Открыть на карте».</p>
+        </div>
       </div>
     </section>
   );
@@ -685,7 +626,6 @@ export default function App() {
         <About />
         <MenuSection />
         <Atmosphere />
-        <Gallery />
         <Reservation />
         <Location />
       </main>

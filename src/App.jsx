@@ -213,7 +213,7 @@ function Header() {
           ))}
         </nav>
         <div className="mobile-nav__meta">
-          <p>Усачёва ул., 15А, Москва</p>
+          <p>Усочевская ул., 15А, Москва</p>
           <p>Ежедневно · 09:00—23:00</p>
         </div>
       </div>
@@ -247,7 +247,7 @@ function Hero() {
         <div className="hero__copy">
           <h1>
             Ресторан
-            <em> на Усачёвой</em>
+            <em> на Усочевской</em>
           </h1>
           <p className="hero__description">
             Понятная еда, светлый зал и спокойный ритм для завтраков, встреч и длинных ужинов.
@@ -274,7 +274,7 @@ function Hero() {
           </div>
           <div className="hero__seal" aria-hidden="true">
             <span>Jnkl</span>
-            <small>Usacheva 15A</small>
+            <small>Usochevskaya 15A</small>
           </div>
         </div>
       </div>
@@ -314,7 +314,7 @@ function About() {
         <div className="about__image about__image--small">
           <img src={asset("photos/food10.webp")} alt="Открытая кухня и детали ресторана" loading="lazy" />
         </div>
-        <p className="about__caption">Усачёва, 15А · место для встреч и длинных разговоров</p>
+        <p className="about__caption">Усочевская, 15А · место для встреч и длинных разговоров</p>
       </div>
       <div className="benefit-list">
         {benefits.map((benefit) => (
@@ -527,7 +527,7 @@ function Location() {
       <div className="location__layout">
         <div className="location__copy reveal">
           <h2>Контакты</h2>
-          <address>Усачёва ул., 15А</address>
+          <address>Усочевская ул., 15А</address>
           <div className="location__details">
             <p>
               <Clock3 size={17} />
@@ -568,9 +568,9 @@ function Footer() {
     <footer className="footer">
       <div className="footer__top">
         <BrandMark />
-        <p>Современный ресторан<br />на Усачёвой улице</p>
+        <p>Современный ресторан<br />на Усочевской улице</p>
         <div>
-          <p>Усачёва ул., 15А, Москва</p>
+          <p>Усочевская ул., 15А, Москва</p>
           <p>Ежедневно с 09:00 до 23:00</p>
         </div>
       </div>

@@ -663,9 +663,13 @@ img {
 
 .menu-layout {
   display: grid;
-  grid-template-columns: minmax(160px, 0.32fr) minmax(390px, 0.9fr) minmax(260px, 0.52fr);
-  gap: clamp(30px, 5vw, 80px);
+  grid-template-columns: minmax(180px, 240px) minmax(520px, 860px);
+  justify-content: center;
+  gap: clamp(30px, 5vw, 70px);
+  max-width: 1160px;
   margin-top: clamp(72px, 9vw, 130px);
+  margin-right: auto;
+  margin-left: auto;
   padding-top: 34px;
   border-top: 1px solid rgba(245, 237, 223, 0.2);
 }
@@ -717,7 +721,6 @@ img {
 }
 
 .menu-dishes__title > span,
-.menu-photo figcaption,
 .menu-note {
   color: rgba(245, 237, 223, 0.5);
   font-size: 8px;
@@ -784,24 +787,6 @@ img {
 
 .menu-note {
   margin: 24px 0 0;
-}
-
-.menu-photo {
-  align-self: end;
-  margin: 0;
-}
-
-.menu-photo img {
-  height: 440px;
-  object-fit: cover;
-  object-position: center;
-  border-radius: 130px 130px 2px 2px;
-}
-
-.menu-photo figcaption {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 13px;
 }
 
 .atmosphere__title {
@@ -1270,10 +1255,6 @@ img {
 
   .menu-layout {
     grid-template-columns: 170px 1fr;
-  }
-
-  .menu-photo {
-    display: none;
   }
 
   .reservation {

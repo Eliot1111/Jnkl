@@ -378,13 +378,6 @@ function MenuSection() {
           </div>
           <p className="menu-note">Меню и состав блюд могут меняться в зависимости от сезона.</p>
         </div>
-        <figure className="menu-photo">
-          <img src={asset("photos/food.webp")} alt="Блюдо с зелёным соусом из меню Jnkl" loading="lazy" />
-          <figcaption>
-            <span>Chef’s choice</span>
-            <span>Летнее меню · 2026</span>
-          </figcaption>
-        </figure>
       </div>
     </section>
   );
